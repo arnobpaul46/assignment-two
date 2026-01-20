@@ -471,13 +471,13 @@ footer p{
     }
     .mic-circle{
         /* margin-top: 20px; */
-        top: 90px;
+        top: 85px;
     }
     .hero-circle{
-    width: 160px;
+    width: 120px;
     }
     .microphone{
-    width: 60px;
+    width: 40px;
     }
     .newbtn{
     width: 50%;
@@ -486,7 +486,7 @@ footer p{
     }
     .text{
     /* display: none; */
-    margin: -5rem auto 0;
+    margin: -4rem auto 0;
     }
     .text h1{
     font-size: 2.5rem;
