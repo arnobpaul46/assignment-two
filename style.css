@@ -10,6 +10,7 @@ body{
     width: 100vw;
     height: 100vh;
     /* overflow-x: hidden; */
+    background: transparent;
 }
 /* nav section */
 nav{
@@ -55,7 +56,7 @@ nav button img{
     background: transparent;
 }
 .hamburger-menu{
-    display: none;
+    display:none;
 }
 /* hero section */
 
@@ -68,8 +69,10 @@ nav button img{
     flex-direction: column;
 }
 .hero-bg{
-    /* width: 98%; */
+    background-image: url(./assets/hero-bg.png);
     background: transparent;
+    background-position: center;
+    background-size: cover;
 }
 .mic-circle{
     position: absolute;
@@ -90,6 +93,13 @@ nav button img{
     position: absolute;
     background: transparent;
     
+}
+.newbtn{
+    position: absolute;
+    background: transparent;
+    width: 50%;
+    top: 10px;
+    left: 240px;
 }
 
 .text{
@@ -192,8 +202,12 @@ nav button img{
 }
 
 /* why choose */
-    .whychoose{
-        background-color: rgba(35, 14, 61, 1);
+.whychoose{
+    /* width: 1600px; */
+    background-color: rgba(35, 14, 61, 1);
+    padding: 20px;
+    /* border: 5px solid blue; */
+        
     }
     .whychoose h1{
     background-color: rgba(35, 14, 61, 1);
@@ -202,9 +216,8 @@ nav button img{
     font-size: 3.9rem;
     font-weight: 700;
     padding: 120px 0 50px ;
-    }
 
-    
+    }
     .whychoose .choose {
     width: 80%;
     margin: 0 auto;
@@ -218,7 +231,6 @@ nav button img{
     justify-content: center;
     align-items: center;
     padding: 40px;
-    /* border: 1px solid blue; */
     border-radius: 40px;
     background: rgba(53, 17, 101, 0.4)
     
@@ -254,6 +266,70 @@ nav button img{
 .whychoose .choose .card:nth-child(4){
     grid-column: span 2 ;
 }
+/* features  */
+.feature{
+    width: 80%;
+    margin: 0 auto;
+}
+.video{
+    background: rgba(26, 11, 46, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.feature h1{
+    font-size: 3.9rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 50px 0;
+}
+.videoCard{
+    width: 25rem;
+    /* border: 2px solid red; */
+    border-radius: 24px ;
+    background: rgba(37, 13, 68, 1);
+    grid-row: span 1;
+}
+.videoCard iframe{
+    width: 100%;
+    border-radius:24px 24px 0 0 ;
+    background: transparent;
+}
+.videoCard h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+    background: transparent;
+}
+.videoCard p{
+    background: transparent;
+    padding: 0 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+}
+.time{
+    background: transparent;
+
+}
+.time p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 24px;
+    text-align: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 255, 136, 1);
+}
+
+
+
+
 
 /* for responsive */
 
@@ -276,13 +352,18 @@ nav button img{
     background: transparent;
     }
     .mic-circle{
-        margin-top: -15rem;
+        margin-top: -16rem;
     }
     .hero-circle{
-    width: 25vw;
+    width: 22vw;
     }
     .microphone{
-    width: 8vw;
+    width: 7vw;
+    }
+    .newbtn{
+    width: 50%;
+    top: 10px;
+    left: 75px;
     }
     .text{
     /* display: none; */
@@ -311,7 +392,7 @@ nav button img{
  /* rating */
     .rating{
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
+    padding-top: 50px;
     }
     .rating-box h2{
     font-size: 40px;
@@ -331,5 +412,15 @@ nav button img{
     .whychoose .choose .card:last-child{
     grid-column: span 2 ;
     padding:  40px;
+    }
+    /* feature */
+    .feature h1{
+        font-size: 40px;
+    }
+     .feature .video{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .feature .video:nth-child(1){
+    grid-column: auto;
     }
 }
