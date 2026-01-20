@@ -9,7 +9,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background: transparent;
 }
 /* nav section */
@@ -17,7 +17,7 @@ nav{
     width: 80%;
     /* border: 1px solid rebeccapurple; */
     margin: 0 auto ;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
