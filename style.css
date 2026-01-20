@@ -100,8 +100,17 @@ nav button img{
     width: 50%;
     top: 10px;
     left: 240px;
+    cursor: pointer;
+    animation: bounce 1.8s infinite;
 }
-
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
 .text{
     color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -535,7 +544,7 @@ footer p{
     }
 
     footer img{
-        width: 8em;  
+        width: 10em;  
     }
 
     footer .iconfooter{
