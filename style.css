@@ -328,8 +328,52 @@ nav button img{
 }
 
 
+.host{
+    width: 80%;
+    margin: 0 auto;
+}
+.host h1{
+    font-size: 3.9rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 60px;
+}
 
-
+.meetHost{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    align-items: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+.meetHost img{
+    background: transparent;
+}
+.hostext h2{
+    background-color: rgba(53, 17, 101, 0.4);
+    /* background: transparent; */
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+}
+.hostext p{
+    background-color: rgba(53, 17, 101, 0.4);
+    /* opacity: 0.6; */
+    color: rgb(134, 133, 133);
+    
+}
+.icon{
+    background-color: rgba(53, 17, 101, 0.4); 
+}
+.icon img{
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 10px ;
+}
 
 /* for responsive */
 
@@ -422,5 +466,15 @@ nav button img{
     }
     .feature .video:nth-child(1){
     grid-column: auto;
+    }
+    .host h1{
+        font-size: 48px;
+    }
+    .meetHost{
+    display: flex;
+    flex-direction: column;
+    }
+    .hostext {
+        text-align: center;
     }
 }
