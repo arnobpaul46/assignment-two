@@ -3,16 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    
+}
+body{
+    width: 100%;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    background: transparent;
+    background: rgba(26, 11, 46, 1);
+}
+/* nav section */
+header{
     background: rgba(26, 11, 46, 1);
 
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    background: transparent;
-}
-/* nav section */
 nav{
     width: 80%;
     /* border: 1px solid rebeccapurple; */
@@ -63,10 +67,12 @@ nav button img{
 .hero{
     position: relative;
     display: flex;
+    min-height: 60vh;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 1);
     flex-direction: column;
+    background: rgba(26, 11, 46, 1);
 }
 .hero-bg{
     background-image: url(./assets/hero-bg.png);
@@ -80,7 +86,8 @@ nav button img{
     justify-content: center;
     align-items: center;
     background: transparent ;
-    margin-top: -9rem;
+    top: 100px;
+    /* bottom: 0; */
 }
 .hero-circle{
     position: relative;
@@ -114,9 +121,9 @@ nav button img{
 .text{
     color: rgba(255, 255, 255, 1);
     text-align: center;
-    margin-top: -20rem;
+    margin-top: -200px;
     background: transparent;
-    padding: 50px;
+    padding: 0 50px;
     
 }
 .text h1{
@@ -167,6 +174,7 @@ nav button img{
 .about{
     width: 80%;
     margin: 40px auto;
+    /* background-color: rgba(145, 0, 248, 1); */
     color: rgba(255, 255, 255, 1);
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
@@ -296,7 +304,8 @@ nav button img{
     padding: 50px 0;
 }
 .videoCard{
-    width: 25rem;
+    width: 100%;
+    max-width: 400px;
     /* border: 2px solid red; */
     border-radius: 24px ;
     background: rgba(37, 13, 68, 1);
@@ -305,6 +314,8 @@ nav button img{
 .videoCard iframe{
     width: 100%;
     border-radius:24px 24px 0 0 ;
+    aspect-ratio: 16 / 9;
+    height: auto;
     background: transparent;
 }
 .videoCard h2{
@@ -365,20 +376,20 @@ nav button img{
     background: transparent;
 }
 .hostext h2{
-    background-color: rgba(53, 17, 101, 0.4);
+    /* background-color: rgba(53, 17, 101, 0.4); */
     /* background: transparent; */
     color: rgba(255, 255, 255, 1);
     font-size: 2rem;
 }
 .hostext p{
-    background-color: rgba(53, 17, 101, 0.4);
+    /* background-color: rgba(53, 17, 101, 0.4); */
     /* opacity: 0.6; */
     color: rgb(134, 133, 133);
     
 }
-.icon{
+/* .icon{
     background-color: rgba(53, 17, 101, 0.4); 
-}
+} */
 .icon img{
     border: 1px solid rgba(83, 60, 114, 1);
     border-radius: 50%;
@@ -440,29 +451,33 @@ footer p{
 @media (max-width: 576px) {
     nav{
         width: 100%;
-
+        padding: 15px;
     }
     nav ul, 
     nav button{
         display: none;
     }
     .hamburger-menu{
-    display: inline;
+    display: block;
     padding: 0 1rem;
     }
     /* hero section */
+    .hero{
+        padding: 40px 10px;
+    }
     .hero-bg{
     width: 98%;
     background: transparent;
     }
     .mic-circle{
-        margin-top: -16rem;
+        /* margin-top: 20px; */
+        top: 90px;
     }
     .hero-circle{
-    width: 22vw;
+    width: 160px;
     }
     .microphone{
-    width: 7vw;
+    width: 60px;
     }
     .newbtn{
     width: 50%;
@@ -474,7 +489,7 @@ footer p{
     margin: -5rem auto 0;
     }
     .text h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     }
     .text p{
@@ -487,7 +502,7 @@ footer p{
         margin: 0;
     }
     .about h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     }
     .about p{
@@ -507,10 +522,10 @@ footer p{
         font-size: 2.5rem;
     }
     .whychoose .choose {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     .whychoose .choose .card:first-child{
-    grid-column: span 2 ;
+    grid-column: span 1 ;
     padding:  40px;
     }
     .whychoose .choose .card:last-child{
